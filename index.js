@@ -14,7 +14,6 @@ io.on("connection", (socket) => {
       const { id, action } = message;
 
       if (id in players) {
-        //players[id]
         console.log("Got action:", action, "for id", id);
 
         if (action === "up") {
