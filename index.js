@@ -40,6 +40,4 @@ io.on("connection", (socket) => {
   });
 });
 
-http.listen(8080, "0.0.0.0", () =>
-  console.log("listening on http://localhost:8080")
-);
+http.listen(8080, "0.0.0.0", () => console.log("listening on :8080"));
