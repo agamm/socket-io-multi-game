@@ -13,6 +13,8 @@ io.on("connection", (socket) => {
     try {
       const { id, action } = message;
 
+      console.log("Got", message);
+
       if (id in players) {
         console.log("Got action:", action, "for id", id);
 
