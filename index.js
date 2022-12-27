@@ -8,7 +8,6 @@ let players = {};
 
 io.on("connection", (socket) => {
   console.log("a user connected");
-  io.emit("message", JSON.stringify(players));
 
   socket.on("message", (message) => {
     try {
